@@ -1,6 +1,6 @@
 # EARL
 
-This repository contains the experimental code for our AAAI 2022 paper: [Entity-Agnostic Representation Learning for Parameter-Efficient Knowledge Graph Embedding](https://arxiv.org/abs/2302.01849). In this paper, we propose an entity-agnostic representation learning (**EARL**) method for handling the problem of inefficient parameter storage costs brought by embedding knowledge graphs.
+This repository contains the experimental code for our AAAI 2023 paper: [Entity-Agnostic Representation Learning for Parameter-Efficient Knowledge Graph Embedding](https://arxiv.org/abs/2302.01849). In this paper, we propose an entity-agnostic representation learning (**EARL**) method for handling the problem of inefficient parameter storage costs brought by embedding knowledge graphs.
 
 ![](./fig/method.png)
 
@@ -12,7 +12,7 @@ We run our code mainly based on ```PyTorch 1.11.0``` and ```DGL 0.8.1``` with CU
 
 We put experimental datasets in ```./data```. Each dataset includes a ```train.txt```, a ```valid.txt``` and a  ```test.txt```. ```entities.dict``` and ```relations.dict``` are used to map entities and relations into indices. 
 
-We use ```pre_train.ipynb``` to generate relaional features for entities (i.e., ```ent_rel_feat.pkl```) and sample reserved entities (i.e., ```res_ent_0p1.pkl```) for each dataset. We have generated these two files for each dataset and you can also try yourself by using ```pre_train.ipynb```. 
+We use ```pre_process.ipynb``` to generate relaional features for entities (i.e., ```ent_rel_feat.pkl```) and sample reserved entities (i.e., ```res_ent_0p1.pkl```) for each dataset. We have generated these two files for each dataset and you can also run the process procedure yourself by using ```pre_process.ipynb```. 
 
 Furthermore, unzip datasets before using them.
 
